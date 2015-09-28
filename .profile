@@ -10,7 +10,7 @@ function title {
       ;;
     *)
       echo -ne "\033]0;$@\007"
-      echo -ne "\033k$@\033\\"
+      echo -ne "\033k$@ \033\\"
       ;;
   esac
 }

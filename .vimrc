@@ -5,10 +5,6 @@ set fo=tcq
 
 syntax on
 
-" set default comment color to cyan instead of darkblue
-" which is not very legible on a black background
-highlight comment ctermfg=cyan
-
 set tabstop=2
 set expandtab
 set softtabstop=2
@@ -29,3 +25,6 @@ filetype plugin indent on
 
 au BufRead,BufNewFile *.pp set filetype=puppet
 
+" Because I like using a terminal with a dark background this
+" makes it so text isn't set with dark blue.
+:color desert

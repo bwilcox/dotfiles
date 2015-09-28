@@ -27,3 +27,12 @@ bin
 perl5
 shellDefaults
 tmp
+.Xauthority
+.cvsrc
+.git
+.lein
+.puppet
+.sh_history
+.vi_history
+cvs
+projects

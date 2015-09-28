@@ -1,0 +1,39 @@
+# # no annoying audible bell, please
+vbell on
+
+# # detach on hangup
+autodetach on
+ 
+# # don't display the copyright page
+startup_message off
+
+# # advertise hardstatus support to $TERMCAP
+# termcapinfo  * '' 'hs:ts=\E_:fs=\E\\:ds=\E_\E\\'
+termcapinfo xterm ti@:te@
+ 
+# # make the shell in every window a login shell
+shell -$SHELL
+defshell /usr/bin/bash
+ 
+# # set every new windows hardstatus line to somenthing descriptive
+defhstatus "screen: ^En (^Et)"
+ 
+defscrollback 10000
+ 
+#term vt100
+#term xterm-256color
+term xterm
+
+#
+#hardstatus alwayslastline "%w  %D, %m/%d/%Y %c"
+hardstatus alwayslastline "%w  %D, %m/%d/%Y"
+#hardstatus alwayslastline "${-b ..}%w%{+b ..}  %D, %m/%d/%Y %c"
+#hardstatus alwayslastline "%{+b}%w%{-b}  %D, %m/%d/%Y %c"
+#hardstatus alwayslastline
+#hardstatus string "%w  %m/%d/%Y %c"
+#hardstatus string "%= %-w%L>%{= BW}%n*%t%{-}%52<%+w %L="
+#hardstatus string '%{= Kd} %{= Kd}%-w%{= Kr}[%{= KW}%n %t%{= Kr}]%{= Kd}%+w %-= %{KG} %H%{KW}|%{KY}%101`%{KW}|%D %M %d %Y%{= Kc} %C%A%{-}'
+
+bindkey "^[Od" prev  # change window with ctrl-left
+bindkey "^[Oc" next  # change window with ctrl-right
+
