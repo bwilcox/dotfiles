@@ -36,3 +36,6 @@ tmp
 .vi_history
 cvs
 projects
+.toc
+*.swp
+.gitconfig
