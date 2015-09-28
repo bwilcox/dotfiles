@@ -109,6 +109,12 @@ case ${os_name} in
       /usr/bin/bash
     fi
     ;;
+  "Darwin")
+    if [[ -e /bin/bash ]]; then
+      export SHELL=/bin/bash
+      /bin/bash
+    fi
+    ;;
   *)
     # We're probably good.
     ;;
