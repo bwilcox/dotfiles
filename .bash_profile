@@ -74,7 +74,7 @@ esac
 title `hostname`
 
 # Set a nicer timeout value
-TMOUT=30000
+#TMOUT=30000
 
 export EDITOR PS1 PATH TMOUT
 
