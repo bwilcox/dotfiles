@@ -39,3 +39,5 @@ projects
 .toc
 *.swp
 .gitconfig
+.gem
+.bash_sessions
