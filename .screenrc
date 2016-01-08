@@ -13,7 +13,7 @@ termcapinfo xterm ti@:te@
  
 # # make the shell in every window a login shell
 shell -$SHELL
-defshell /usr/bin/bash
+defshell /bin/bash
  
 # # set every new windows hardstatus line to somenthing descriptive
 defhstatus "screen: ^En (^Et)"
