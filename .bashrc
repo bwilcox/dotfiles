@@ -9,3 +9,7 @@ case $os_name in
   *)
     ;;
 esac
+
+if [[ -d $HOME/.rvm/bin ]]
+  export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+fi

@@ -79,3 +79,5 @@ title `hostname`
 export EDITOR PS1 PATH TMOUT
 
 mesg n
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
