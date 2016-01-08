@@ -42,3 +42,11 @@ projects
 .gitconfig
 .gem
 .bash_sessions
+.mkshrc
+.rvm/
+.subversion/
+.zlogin
+.zshrc
+.lesshst
+.vagrant.d/
+VirtualBox VMs/
