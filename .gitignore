@@ -50,3 +50,4 @@ projects
 .lesshst
 .vagrant.d/
 VirtualBox VMs/
+.irb-history
