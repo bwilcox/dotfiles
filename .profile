@@ -96,10 +96,14 @@ esac
 # Set the title of the window to the hostname of the server
 title `hostname`
 
-# Set a nicer timeout value
-TMOUT=30000
-
-export EDITOR PS1 PATH TMOUT
+# Set a nicer timeout value, but only if TMOUT isn't readonly
+readonly | cut -d= -f1 | cut -d' ' -f3 | grep TMOUT > /dev/null
+if [[ $? > 0 ]]; then
+  TMOUT=30000
+  export EDITOR PS1 PATH TMOUT
+else
+  export EDITOR PS1 PATH
+fi
 
 # If the bash shell is available, execute it.
 case ${os_name} in
