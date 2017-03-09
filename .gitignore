@@ -6,4 +6,5 @@
 !.profile-linux
 !.bashrc
 !.bash_profile
+!README.md
 .vim/.netrwhist
