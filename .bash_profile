@@ -53,8 +53,8 @@ case ${os_name} in
 
   "Darwin")
     # Look for git and change the prompt
-    if [ -f "/Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh" ] ; then
-      source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
+    if [ -f "/Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh" ] ; then
+      source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
       export PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\n\$ "'
       export GIT_PS1_SHOWDIRTYSTATE=1
       export GIT_PS1_SHOWUNTRACKEDFILES=1
