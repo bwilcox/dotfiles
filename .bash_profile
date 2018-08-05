@@ -68,6 +68,8 @@ case ${os_name} in
     alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
     alias synergy-stop="launchctl unload /Library/LaunchAgents/com.symless.synergy.synergy-service.plist"
 alias synergy-start="launchctl load /Library/LaunchAgents/com.symless.synergy.synergy-service.plist"
+alias synergy-disable="sudo launchctl disable system/synergy-service"
+alias synergy-enable="sudo launchctl enable system/synergy-service"
     ;;
 
   *)
