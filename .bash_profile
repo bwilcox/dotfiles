@@ -62,7 +62,7 @@ case ${os_name} in
       export GIT_PS1_SHOWUNTRACKEDFILES=1
     fi
 
-    PATH=$PATH:/usr/bin:/usr/sbin:/usr/local/bin:/sbin:/bin:$HOME/bin
+    PATH=$PATH:/usr/bin:/usr/sbin:/usr/local/bin:/sbin:/bin:$HOME/bin:/opt/puppetlabs/pdk/bin:/opt/puppetlabs/bin:/opt/puppetlabs/puppet/bin
 
     alias j9="export JAVA_HOME=`/usr/libexec/java_home -v 9`; java -version"
     alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
